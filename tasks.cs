@@ -62,8 +62,7 @@ else
     Console.WriteLine($"Число {x} не чётное");
 }
 
-*/
-
+7
 int x = -(RandomNumbers_1());
 int y = RandomNumbers_1();
 Console.WriteLine($"{x} ");
@@ -73,3 +72,4 @@ while (x <= y)
     Console.Write($"{x} | ");
     x++;
 }
+*/
