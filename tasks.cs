@@ -1,10 +1,12 @@
 ﻿using static library;
 /*
-int q = library.RandomNumbers_1();
+0
+int q =  RandomNumbers_1();
 q = q*q*q;
 
-int w = library.RandomNumbers_1();
-int e = library.RandomNumbers_1();
+1
+int w =  RandomNumbers_1();
+int e =  RandomNumbers_1();
 int r = 0;
 if(e == w*w){
     Console.WriteLine(e +" Квадрат числа" + w);
@@ -14,8 +16,9 @@ if(e == w*w){
     Console.WriteLine("не подходит");
 }
 
-int t = library.RandomNumbers_1();
-int y = library.RandomNumbers_1();
+2
+int t =  RandomNumbers_1();
+int y =  RandomNumbers_1();
 if(t > y){
     Console.WriteLine(t + " Больше чем " + y);
 }else if(t == y)  {
@@ -24,9 +27,10 @@ if(t > y){
     Console.WriteLine(y + " Больше чем " + t);
 }
 
-int a = library.RandomNumbers_1();
-int s = library.RandomNumbers_1();
-int d = library.RandomNumbers_1();
+4
+int a = RandomNumbers_1();
+int s = RandomNumbers_1();
+int d = RandomNumbers_1();
 int asd = a;
 if (a > asd)
 {
@@ -46,5 +50,16 @@ if (d > asd)
     Console.WriteLine("Ответ");
     Console.WriteLine(asd);
 }
-*/
 
+6
+int x = RandomNumbers_1();
+if (x % 2 == 0)
+{
+    Console.WriteLine($"Число {x} чётное");
+}
+else
+{
+    Console.WriteLine($"Число {x} не чётное");
+}
+
+*/
