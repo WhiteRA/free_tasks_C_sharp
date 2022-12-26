@@ -63,3 +63,13 @@ else
 }
 
 */
+
+int x = -(RandomNumbers_1());
+int y = RandomNumbers_1();
+Console.WriteLine($"{x} ");
+Console.WriteLine($"{y} ");
+while (x <= y)
+{
+    Console.Write($"{x} | ");
+    x++;
+}
