@@ -1,5 +1,4 @@
 .vs
 bin
 obj
-Tasks.csproj
-Tasks.sln
+free_tasks_C_sharp.csproj

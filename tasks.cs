@@ -28,21 +28,23 @@ int a = library.RandomNumbers_1();
 int s = library.RandomNumbers_1();
 int d = library.RandomNumbers_1();
 int asd = a;
-if(a > asd){
+if (a > asd)
+{
     asd = a;
     Console.WriteLine("Ответ");
     Console.WriteLine(asd);
 }
-if (s > asd){
+if (s > asd)
+{
     asd = s;
     Console.WriteLine("Ответ");
     Console.WriteLine(asd);
 }
-if (d > asd){
+if (d > asd)
+{
     asd = d;
     Console.WriteLine("Ответ");
     Console.WriteLine(asd);
 }
-
-
 */
+
