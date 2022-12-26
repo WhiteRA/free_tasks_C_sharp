@@ -72,4 +72,11 @@ while (x <= y)
     Console.Write($"{x} | ");
     x++;
 }
+
+8
+int x = RandomNumbers_1();
+for (int i = 1; i < x; i++)
+{
+    Console.Write($"{i} ");
+}
 */
