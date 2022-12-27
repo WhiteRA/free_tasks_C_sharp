@@ -81,3 +81,25 @@ for (int i = 1; i < x; i++)
 }
 
 */
+
+int[,] a = CrtTwoDimArr(5, 5);
+FillTwoDimArr(a);
+PrintTwoDimArr(a);
+//Сортировки пузырьком в двумерном массиве построчно
+for (int i = 0; i < a.GetLength(0); i++)
+{
+    for (int j = 0; j < a.GetLength(1); j++)
+    {
+        for (int k = 0; k < a.GetLength(1) - 1; k++)
+        {
+            if (a[i, k] < a[i, k + 1])
+            {
+                int t = a[i, k + 1];
+                a[i, k + 1] = a[i, k];
+                a[i, k] = t;
+            }
+        }
+    }
+}
+Console.WriteLine();
+PrintTwoDimArr(a);
