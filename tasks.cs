@@ -1,4 +1,4 @@
-using static library;
+﻿using static library;
 /*
 0
 int q =  RandomNumbers_1();
@@ -81,6 +81,7 @@ for (int i = 1; i < x; i++)
 }
 
 
+Задача 54
 int[,] a = CrtTwoDimArr(5, 5);
 FillTwoDimArr(a);
 PrintTwoDimArr(a);
@@ -102,3 +103,35 @@ for (int i = 0; i < a.GetLength(0); i++)
 }
 Console.WriteLine();
 PrintTwoDimArr(a);
+*/
+
+int[,] a = CrtTwoDimArr(5, 4);
+FillTwoDimArr(a);
+PrintTwoDimArr(a);
+int[] s = CrtArr(5);
+int p = 0;
+int r = 0;
+for (int i = 0; i < a.GetLength(0); i++)
+{
+    for (int j = 0; j < a.GetLength(1); j++)
+    {
+        p += a[i, j];
+    }
+    s[i] = p;
+    p = 0;
+}
+Console.WriteLine();
+PrintMass(s);
+r = s[0];
+
+int v = 0;
+for (int i = 1; i < s.Length; i++)
+{
+    if (true)
+    {
+
+    }
+}
+
+Console.WriteLine();
+Console.WriteLine(v);

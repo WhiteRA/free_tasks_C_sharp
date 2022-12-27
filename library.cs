@@ -38,4 +38,19 @@ public static class library
             }
         }
     }
+
+    public static int[] CrtArr(int count)
+    {
+        return new int[count];
+    }
+
+    public static string PrintMass(int[] array)
+    {
+        string r = String.Empty;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Console.Write($"{array[i]} ");
+        }
+        return r;
+    }
 }
