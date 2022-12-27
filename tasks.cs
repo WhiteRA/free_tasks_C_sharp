@@ -1,4 +1,4 @@
-﻿using static library;
+using static library;
 /*
 0
 int q =  RandomNumbers_1();
@@ -80,7 +80,6 @@ for (int i = 1; i < x; i++)
     Console.Write($"{i} ");
 }
 
-*/
 
 int[,] a = CrtTwoDimArr(5, 5);
 FillTwoDimArr(a);
