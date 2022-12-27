@@ -122,16 +122,5 @@ for (int i = 0; i < a.GetLength(0); i++)
 }
 Console.WriteLine();
 PrintMass(s);
-r = s[0];
-
-int v = 0;
-for (int i = 1; i < s.Length; i++)
-{
-    if (true)
-    {
-
-    }
-}
 
 Console.WriteLine();
-Console.WriteLine(v);
