@@ -104,23 +104,29 @@ for (int i = 0; i < a.GetLength(0); i++)
 Console.WriteLine();
 PrintTwoDimArr(a);
 */
-
+Задача 56
 int[,] a = CrtTwoDimArr(5, 4);
 FillTwoDimArr(a);
 PrintTwoDimArr(a);
+Console.WriteLine();
 int[] s = CrtArr(5);
 int p = 0;
-int r = 0;
+int r = int.MaxValue;
+int indexMin = 0;
 for (int i = 0; i < a.GetLength(0); i++)
 {
     for (int j = 0; j < a.GetLength(1); j++)
     {
         p += a[i, j];
     }
-    s[i] = p;
+    Console.Write($"{p} ");
+    if (p < r)
+    {
+        r = p;
+        indexMin = i + 1;
+    }
     p = 0;
 }
 Console.WriteLine();
-PrintMass(s);
-
 Console.WriteLine();
+Console.WriteLine(indexMin);
