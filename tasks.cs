@@ -189,4 +189,15 @@ void GapNumberSum(int m, int n, int sum)
     GapNumberSum(m, n, sum);
 }
 GapNumberSum(m, n, sum);
+
+//Задача 68
+int m = 3;
+int n = 3;
+int functionAkkerman(int m, int n)
+{
+    if (m == 0) return n + 1;
+    else if (n == 0) return functionAkkerman(m - 1, 1);
+    else return functionAkkerman(m - 1, functionAkkerman(m, n - 1));
+}
+Console.WriteLine(functionAkkerman(m, n));
 */
