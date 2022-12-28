@@ -103,7 +103,7 @@ for (int i = 0; i < a.GetLength(0); i++)
 }
 Console.WriteLine();
 PrintTwoDimArr(a);
-*/
+
 Задача 56
 int[,] a = CrtTwoDimArr(5, 4);
 FillTwoDimArr(a);
@@ -130,3 +130,24 @@ for (int i = 0; i < a.GetLength(0); i++)
 Console.WriteLine();
 Console.WriteLine();
 Console.WriteLine(indexMin);
+*/
+
+int[,] a = CrtTwoDimArr(2, 2);
+int[,] b = CrtTwoDimArr(2, 2);
+int[,] c = CrtTwoDimArr(2, 2);
+
+FillTwoDimArr(a);
+FillTwoDimArr(b);
+
+PrintTwoDimArr(a);
+Console.WriteLine();
+PrintTwoDimArr(b);
+
+c[0, 0] = (a[0, 0] * b[0, 0]) + (a[0, 1] * b[1, 0]);
+c[0, 1] = (a[0, 0] * b[0, 1]) + (a[0, 1] * b[1, 1]);
+
+c[1, 0] = (a[1, 0] * b[0, 0]) + (a[1, 1] * b[1, 0]);
+c[1, 1] = (a[1, 0] * b[0, 1]) + (a[1, 1] * b[1, 1]);
+
+Console.WriteLine();
+PrintTwoDimArr(c);
