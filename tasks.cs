@@ -152,24 +152,16 @@ c[1, 1] = (a[1, 0] * b[0, 1]) + (a[1, 1] * b[1, 1]);
 Console.WriteLine();
 PrintTwoDimArr(c);
 
-
-int recursion(int x)
-{
-    return recursion(x - 1);
-}
-Console.WriteLine(recursion(5));
-
 //Задача 64
-void recursion(int x)
+void recursion(int number)
 {
-    if (x == 0)
+    if (number == 0)
     {
         return;
     };
-    Console.Write($"{x} ");
-    recursion(x - 1);
+    Console.Write($"{number} ");
+    recursion(number - 1);
 }
-
 recursion(5);
 
 
