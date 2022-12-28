@@ -158,7 +158,7 @@ int recursion(int x)
     return recursion(x - 1);
 }
 Console.WriteLine(recursion(5));
-*/
+
 //Задача 64
 void recursion(int x)
 {
@@ -171,3 +171,22 @@ void recursion(int x)
 }
 
 recursion(5);
+
+
+//Задача 66
+int m = 1;
+int n = 15;
+int sum = 0;
+
+void GapNumberSum(int m, int n, int sum)
+{
+    if (m > n)
+    {
+        return;
+    }
+    sum += (m++);
+    Console.WriteLine(sum);
+    GapNumberSum(m, n, sum);
+}
+GapNumberSum(m, n, sum);
+*/
